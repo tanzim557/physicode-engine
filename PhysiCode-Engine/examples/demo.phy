@@ -1,0 +1,75 @@
+Environment
+{
+    type = Earth;
+}
+
+Environment
+{
+    type = Moon;
+}
+
+Environment
+{
+    type = Mars;
+}
+
+Environment
+{
+    type = Space;
+}
+
+Settings {
+
+    trail = true;
+
+    slowmotion = 0.5;
+
+}
+
+Object Ball_A {
+
+    shape = circle;
+
+    radius = 25;
+
+    mass = 10;
+
+    position = (100,200);
+
+    velocity = (15,0);
+
+    color = red;
+
+    elasticity = 0.9;
+
+}
+
+Object Ball_B {
+    shape = circle;
+    radius = 30;
+    mass = 20;
+    position = (400,100);
+    velocity = (-10,0);
+    color = blue;
+    elasticity = 0.8;
+}
+Object Box_A {
+
+    shape = rectangle;
+
+    width = 120;
+
+    height = 60;
+
+    mass = 15;
+
+    position = (700,150);
+
+    velocity = (0,0);
+
+    color = green;
+
+    elasticity = 0.8;
+
+}
+ActiveEnvironment = Earth ;

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PhysiCode Engine</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ========================= -->
+    <!-- Header -->
+    <!-- ========================= -->
+
+    <header>
+
+        <h1>PHYSICODE ENGINE</h1>
+
+        <p>Declarative Physics Simulation Studio</p>
+
+    </header>
+
+
+    <!-- ========================= -->
+    <!-- Dashboard -->
+    <!-- ========================= -->
+
+    <div class="dashboard">
+
+        <div class="card environment-card">
+
+    <div class="environment-header">
+        <h3>Environment</h3>
+
+        <select id="environmentSelect">
+            <option value="0">Earth</option>
+            <option value="1">Moon</option>
+            <option value="2">Mars</option>
+            <option value="3">Space</option>
+        </select>
+    </div>
+
+    <p id="env">Earth</p>
+
+    </div>
+
+        <div class="card">
+            <h3>Gravity</h3>
+            <p id="gravity">9.8</p>
+        </div>
+
+        <div class="card">
+            <h3>Objects</h3>
+            <p id="objects">0</p>
+        </div>
+
+        <div class="card">
+            <h3>FPS</h3>
+            <p id="fps">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Status</h3>
+            <p id="status">Paused</p>
+        </div>
+
+        <div class="card">
+            <h3>Time</h3>
+            <p id="time">0.0 s</p>
+        </div>
+
+    </div>
+
+   
+
+    <!-- ========================= -->
+    <!-- Controls -->
+    <!-- ========================= -->
+
+    <div class="controls">
+
+        <button id="playBtn">▶ Play</button>
+
+        <button id="pauseBtn">⏸ Pause</button>
+
+        <button id="resetBtn">⟳ Reset</button>
+
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- Canvas + Object Info -->
+    <!-- ========================= -->
+
+    <div class="main-content">
+
+        <!-- Canvas -->
+
+        <canvas
+            id="canvas"
+            width="1200"
+            height="650">
+        </canvas>
+
+
+        <!-- Right Side Info Panel -->
+
+        <div id="objectInfo">
+
+            
+
+         <h2>Selected Object</h2>
+
+<hr>
+
+<p>
+    <span>Name</span>
+    <span id="objName">None</span>
+</p>
+
+<p>
+    <span>Shape</span>
+    <span id="objShape">-</span>
+</p>
+
+<p>
+    <span>Mass</span>
+    <span id="objMass">-</span>
+</p>
+
+<p>
+    <span>Position</span>
+    <span id="objPosition">-</span>
+</p>
+
+<p>
+    <span>Velocity</span>
+    <span id="objVelocity">-</span>
+</p>
+
+<p>
+    <span>Elasticity</span>
+    <span id="objElasticity">-</span>
+</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js?t=1"></script>
+
+</body>
+
+</html>

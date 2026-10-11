@@ -1,0 +1,11 @@
+
+// for terminal
+// bison -d parser.y
+// flex lexer.l
+// gcc main.c parser.tab.c lex.yy.c simulation.c -o physicode.exe
+// .\physicode.exe ..\examples\demo.phy
+
+// 
+// for fontern
+// cd frontend
+// python -m http.server 8000

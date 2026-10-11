@@ -1,0 +1,61 @@
+{
+  "environments": [
+    {
+      "type":"Earth",
+      "gravity":9.80
+    },
+    {
+      "type":"Moon",
+      "gravity":1.62
+    },
+    {
+      "type":"Mars",
+      "gravity":3.71
+    },
+    {
+      "type":"Space",
+      "gravity":0.00
+    }
+  ],
+
+  "activeEnvironment": 0,
+
+  "settings": {
+    "trail": true,
+    "slow_motion": 0.50
+  },
+
+  "objects": [
+    {
+      "name": "Ball_A",
+      "shape": "circle",
+      "radius": 25.00,
+      "mass": 10.00,
+      "position": { "x": 100.00, "y": 200.00 },
+      "velocity": { "x": 15.00, "y": 0.00 },
+      "color": "red",
+      "elasticity": 0.90
+    },
+    {
+      "name": "Ball_B",
+      "shape": "circle",
+      "radius": 30.00,
+      "mass": 20.00,
+      "position": { "x": 400.00, "y": 100.00 },
+      "velocity": { "x": -10.00, "y": 0.00 },
+      "color": "blue",
+      "elasticity": 0.80
+    },
+    {
+      "name": "Box_A",
+      "shape": "rectangle",
+      "width": 120.00,
+      "height": 60.00,
+      "mass": 15.00,
+      "position": { "x": 700.00, "y": 150.00 },
+      "velocity": { "x": 0.00, "y": 0.00 },
+      "color": "green",
+      "elasticity": 0.80
+    }
+  ]
+}
