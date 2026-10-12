@@ -1,21 +1,46 @@
-# Physicode Engine
+﻿# ðŸŒŒ PhysiCode Engine - Physics Simulation DSL & Compiler
 
-PhysiCode Engine - Custom simulation and code execution engine.
+[![C Language](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)](https://en.wikipedia.org/wiki/C_(programming_language))
+[![Compiler](https://img.shields.io/badge/Compiler-Flex_%26_Bison-blue?style=for-the-badge)](https://en.wikipedia.org/wiki/Compiler)
+[![Physics Engine](https://img.shields.io/badge/Physics_Engine-Simulation-orange?style=for-the-badge)](https://en.wikipedia.org/wiki/Physics_engine)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-## Overview
-This repository contains the source code for the **Physicode Engine** project.
+> A custom domain-specific programming language (DSL) and execution compiler for scientific physics simulations. Translates declarative physics code into structured computational instruction matrices (output.json) and real-time frontend visualization.
 
-## Features
-- Clean and modern codebase architecture
-- Modular project structure
-- Built with high performance and maintainability in mind
+---
 
-## Setup & Getting Started
-Clone the repository and follow project setup instructions:
+## ðŸŒŸ Key Architecture
+
+- **ðŸ”¡ Lexical Analysis (compiler/lexer.l)**: Custom token definitions for physics primitives (ody, mass, elocity, gravity, collision, 	ime_step).
+- **ðŸ“ Syntax Parser (compiler/parser.y)**: LALR parser constructing concrete syntax trees and validating physical constraints.
+- **âš™ï¸ Simulation Engine Core (compiler/simulation.c)**: Integrates numerical equations of motion, Euler integration, and kinematic collision resolution.
+- **ðŸ“„ Complete Formal Specification**:
+  - [docs/grammar.md](PhysiCode-Engine/docs/grammar.md): Formal EBNF grammar specification.
+  - [docs/syntax.md](PhysiCode-Engine/docs/syntax.md): Language syntax guidelines.
+  - [docs/architecture.md](PhysiCode-Engine/docs/architecture.md): Deep-dive system design.
+
+---
+
+## ðŸš€ Building the Compiler
+
 `ash
-git clone https://github.com/tanzim557/physicode-engine.git
-cd physicode-engine
+cd PhysiCode-Engine/compiler
+
+# Build using GNU Make
+make
+
+# Execute a simulation script
+./physicode.exe < ../examples/planetary_orbit.phys
 `
 
-## Author
-Developed by [MUBASSHER ALAM TANZIM](https://github.com/tanzim557).
+---
+
+## ðŸ‘¤ Author
+
+Developed by **[Mubassher Alam Tanzim](https://github.com/tanzim557)**  
+GitHub: [@tanzim557](https://github.com/tanzim557) â€¢ Email: mubassheralam0@gmail.com
+
+---
+
+## ðŸ“„ License
+This project is licensed under the MIT License.
